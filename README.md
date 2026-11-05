@@ -1,6 +1,7 @@
-# DVWS Solution: OWASP Top 10 靶机题解
+# OWASP Top 10 靶机题解: DVWA 全关卡
 
 一套面向 DVWA (Damn Vulnerable Web App) 的通关记录: 12 个模块, 每题都走过 Low / Medium / High 三档.
+仓库名沿用 `DVWS-Solution`, 靶机是 DVWA v1.10.
 仓库里有两部分内容:
 
 - `solutions/`: 可以重复运行的 Python 脚本, 用 `requests` 复现每一关的绕过思路.
