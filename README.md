@@ -1,41 +1,8 @@
 # OWASP Top 10 靶机题解: DVWA 全关卡
 
-一套面向 DVWA (Damn Vulnerable Web App) 的通关记录: 12 个模块, 每题都走过 Low / Medium / High 三档.
-仓库名沿用 `DVWS-Solution`, 靶机是 DVWA v1.10.
-仓库里有两部分内容:
-
-- `solutions/`: 可以重复运行的 Python 脚本, 用 `requests` 复现每一关的绕过思路.
-- `docs/`: 配套的图文笔记, 按 `防护做了什么 -> 为什么能绕过` 的顺序讲清楚每一档.
-
 > [!WARNING]
 > 本仓库仅用于自建靶场的授权测试与学习.
 > 请勿把脚本指向任何你未获得书面授权的系统.
-
-## 目录结构
-
-```text
-.
-├── README.md
-├── requirements.txt
-├── docs
-│   ├── assets/                          # 笔记里的截图
-│   └── owasp-top10-walkthrough.md       # 完整通关笔记
-└── solutions
-    ├── dvwa.py                          # 会话封装, 其它脚本共用
-    ├── 1-brute.py
-    ├── 2-cmd_injection.py
-    ├── 3-csrf.py
-    ├── 4-file_upload.py
-    ├── 5-sql_injection.py
-    ├── 6-sql_blind.py
-    ├── 7-weak_session.py
-    ├── 8-xss_dom.py
-    ├── 9-xss_reflected.py
-    ├── 10-xss_stored.py
-    ├── 11-csp.py
-    ├── 12-javascript.py
-    └── payloads/                        # 上传用的 php / js / html 载荷
-```
 
 ## 快速开始
 
